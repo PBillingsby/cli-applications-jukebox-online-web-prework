@@ -20,6 +20,7 @@ def help
 end
 
 def lists(songs)
-  songs.each_with_index { |item, index| p "#{index}:#{item + 1}" }
+  songs.each_with_index do |value, index|  
+    puts "#{index + 1}. #{value}"
   end
 end    
