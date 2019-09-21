@@ -11,7 +11,14 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def run
+def run(songs)
+  command_arr = ["exit", "lists", "help", "play"]
+  puts "Please enter a command:"
+  user_input = gets.strip
+  if user_input == "exit"
+    exit_jukebox
+  elsif user_input == "list"
+    list
   
 
 def help
